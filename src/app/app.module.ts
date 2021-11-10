@@ -1,14 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { Page1Component } from './components/page1/page1.component';
+import { Page2Component } from './components/page2/page2.component';
+import { Page3Component } from './components/page3/page3.component';
+import { GalleryComponent } from './shared/gallery/gallery.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Page1Component,
+    Page2Component,
+    Page3Component,
+    GalleryComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
